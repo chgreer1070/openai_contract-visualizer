@@ -1,0 +1,18 @@
+{
+  "type_classification": "M",
+  "recovery_mechanics": {
+    "enabled": true,
+    "window_days": 15,
+    "owner": "legal-ops"
+  },
+  "seam_risk": {
+    "severity": "H",
+    "owner": "risk-team",
+    "summary": "Termination dependencies may impact payment recovery."
+  },
+  "validation_report": {
+    "status": "warning",
+    "errors": [],
+    "warnings": ["Missing governing law clause"]
+  }
+}

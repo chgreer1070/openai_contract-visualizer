@@ -1,0 +1,21 @@
+{
+  "contract_id": "C-001",
+  "title": "Master Services Agreement",
+  "parties": ["Acme Corp", "Globex LLC"],
+  "contract_type": "services",
+  "amount_usd": 150000,
+  "term_months": 24,
+  "clauses": [
+    {"id": "cl-1", "text": "Provider must maintain 99.9% uptime."},
+    {"id": "cl-2", "text": "Customer may terminate with 30 days notice."}
+  ],
+  "dependencies": {
+    "nodes": [
+      {"id": "n1", "name": "Payment Terms", "type": "obligation"},
+      {"id": "n2", "name": "Termination", "type": "right"}
+    ],
+    "edges": [
+      {"source": "n1", "target": "n2", "relation": "influences"}
+    ]
+  }
+}
